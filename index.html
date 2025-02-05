@@ -9,16 +9,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <title>qr-code-component</title>
   <style>
+
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+       }
+
+     body{
+       background-color: hsl(212, 45%, 89%) ;
+
+     }
+
     img{
-      width: 576px;
-      height: 576px;
+      width: 400px;
+      height: 400px;
       border-radius:10%;
+      
     }
-    body {
-  overflow-y: hidden;
-}
     h1{
       font-family:"Outfit", sans-serif;
+      padding: 20px;
+      margin: 20px;
+    }
+    .card{
+      display: flex;
+      border: 3px solid white;
+      justify-items:center ;
+      align-items:center
+
     }
     p{
        color: hsl(216, 15%, 48%);
@@ -30,9 +49,9 @@
    
   </style>
 </head>
-<body style='background-color: hsl(212, 45%, 89%)'>
+<body>
   <main>
-      <div class="single">  
+      <div class="card">  
       <img src="images/image-qr-code.png" alt="qr-code-image" >
       <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
